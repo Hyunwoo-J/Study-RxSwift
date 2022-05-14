@@ -21,6 +21,14 @@ class ViewController: UIViewController {
 /// 메인 화면 테이블뷰 데이터 관리
 extension ViewController: UITableViewDataSource {
     
+    /// 섹션의 개수를 리턴합니다.
+    /// - Parameter tableView: 메인 화면 테이블뷰
+    /// - Returns: 섹션의 개수
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    
     /// 섹션에 표시할 셀 수를 리턴합니다.
     /// - Parameters:
     ///   - tableView: 메인 화면 테이블뷰
@@ -39,10 +47,13 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        switch indexPath.row {
+        switch indexPath.section {
         case 0:
             cell.textLabel?.text = "Alert"
-            
+        
+        case 1:
+            cell.textLabel?.text = "Binding"
+        
         default:
             fatalError()
         }
@@ -62,13 +73,36 @@ extension ViewController: UITableViewDelegate {
     ///   - tableView: 메인 화면 테이블뷰
     ///   - indexPath: 섹션 인덱스
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
+        switch indexPath.section {
         case 0:
             performSegue(withIdentifier: "alert", sender: nil)
+        
+        case 1:
+            performSegue(withIdentifier: "binding", sender: nil)
             
         default:
             break
         }
+    }
+    
+    
+    /// 섹션 헤더의 높이를 지정합니다.
+    /// - Parameters:
+    ///   - tableView: 메인 화면 테이블뷰
+    ///   - section: 섹션
+    /// - Returns: 헤더의 높이
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
+    
+    /// 행의 높이를 지정합니다.
+    /// - Parameters:
+    ///   - tableView: 메인 화면 테이블뷰
+    ///   - indexPath: 섹션 인덱스
+    /// - Returns: 행의 높이
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
     }
 }
 

@@ -25,7 +25,7 @@ extension ViewController: UITableViewDataSource {
     /// - Parameter tableView: 메인 화면 테이블뷰
     /// - Returns: 섹션의 개수
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     
@@ -53,6 +53,9 @@ extension ViewController: UITableViewDataSource {
         
         case 1:
             cell.textLabel?.text = "Binding"
+            
+        case 2:
+            cell.textLabel?.text = "Driver"
         
         default:
             fatalError()
@@ -79,6 +82,9 @@ extension ViewController: UITableViewDelegate {
         
         case 1:
             performSegue(withIdentifier: "binding", sender: nil)
+            
+        case 2:
+            performSegue(withIdentifier: "driver", sender: nil)
             
         default:
             break

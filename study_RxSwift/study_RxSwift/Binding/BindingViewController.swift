@@ -35,7 +35,6 @@ class BindingViewController: UIViewController {
             # Binder
             * 에러 이벤트를 전달받지 않는다.
             * 메인 쓰레드에서 실행됨을 보장한다. -> UI 관련 작업은 모두 메인 쓰레드에서 이뤄져야 하기 때문에 Binder를 사용하면 좋다.
-         
          */
     }
     

@@ -18,6 +18,8 @@
 		2C6ECD62282EBDA800AD611A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6ECD60282EBDA800AD611A /* LaunchScreen.storyboard */; };
 		2C6ECD6D282EC18400AD611A /* AlertStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6ECD6C282EC18400AD611A /* AlertStoryboard.storyboard */; };
 		2C6ECD6F282EC19100AD611A /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6ECD6E282EC19100AD611A /* AlertViewController.swift */; };
+		2C9E43B82832976000F34238 /* DriverStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E43B72832976000F34238 /* DriverStoryboard.storyboard */; };
+		2C9E43BA2832976C00F34238 /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E43B92832976C00F34238 /* DriverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		2C6ECD63282EBDA800AD611A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C6ECD6C282EC18400AD611A /* AlertStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertStoryboard.storyboard; sourceTree = "<group>"; };
 		2C6ECD6E282EC19100AD611A /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		2C9E43B72832976000F34238 /* DriverStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DriverStoryboard.storyboard; sourceTree = "<group>"; };
+		2C9E43B92832976C00F34238 /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
 		58103A12739BDE98A94CD2CC /* Pods-study_RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-study_RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-study_RxSwift/Pods-study_RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		AA301C32761B2E3942B171F0 /* Pods_study_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_study_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FA220FC6417D0316B392F6 /* Pods-study_RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-study_RxSwift.release.xcconfig"; path = "Target Support Files/Pods-study_RxSwift/Pods-study_RxSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			children = (
 				2C6ECD6B282EC15600AD611A /* Alert */,
 				2C312F1028301A87007BE505 /* Binding */,
+				2C9E43B62832975000F34238 /* Driver */,
 				2C6ECD55282EBDA600AD611A /* AppDelegate.swift */,
 				2C6ECD57282EBDA600AD611A /* SceneDelegate.swift */,
 				2C6ECD59282EBDA600AD611A /* ViewController.swift */,
@@ -108,6 +113,15 @@
 				2C6ECD6E282EC19100AD611A /* AlertViewController.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		2C9E43B62832975000F34238 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E43B72832976000F34238 /* DriverStoryboard.storyboard */,
+				2C9E43B92832976C00F34238 /* DriverViewController.swift */,
+			);
+			path = Driver;
 			sourceTree = "<group>";
 		};
 		8CA59625CD0CE07D833F8109 /* Pods */ = {
@@ -184,6 +198,7 @@
 				2C312F1228301AAF007BE505 /* BindingStoryboard.storyboard in Resources */,
 				2C6ECD5F282EBDA800AD611A /* Assets.xcassets in Resources */,
 				2C6ECD5D282EBDA600AD611A /* Main.storyboard in Resources */,
+				2C9E43B82832976000F34238 /* DriverStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9E43BA2832976C00F34238 /* DriverViewController.swift in Sources */,
 				2C6ECD5A282EBDA600AD611A /* ViewController.swift in Sources */,
 				2C6ECD56282EBDA600AD611A /* AppDelegate.swift in Sources */,
 				2C6ECD58282EBDA600AD611A /* SceneDelegate.swift in Sources */,

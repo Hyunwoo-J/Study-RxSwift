@@ -10,6 +10,8 @@
 		06F6466972C942FB043F0E3B /* Pods_study_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA301C32761B2E3942B171F0 /* Pods_study_RxSwift.framework */; };
 		2C312F1228301AAF007BE505 /* BindingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C312F1128301AAF007BE505 /* BindingStoryboard.storyboard */; };
 		2C312F1428301AC8007BE505 /* BindingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C312F1328301AC8007BE505 /* BindingViewController.swift */; };
+		2C4DA6F92836C89A00454941 /* LimitOfTextFieldStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4DA6F82836C89A00454941 /* LimitOfTextFieldStoryboard.storyboard */; };
+		2C4DA6FB2836C8D500454941 /* LimitOfTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4DA6FA2836C8D500454941 /* LimitOfTextFieldViewController.swift */; };
 		2C6ECD56282EBDA600AD611A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6ECD55282EBDA600AD611A /* AppDelegate.swift */; };
 		2C6ECD58282EBDA600AD611A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6ECD57282EBDA600AD611A /* SceneDelegate.swift */; };
 		2C6ECD5A282EBDA600AD611A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6ECD59282EBDA600AD611A /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		2C312F1128301AAF007BE505 /* BindingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BindingStoryboard.storyboard; sourceTree = "<group>"; };
 		2C312F1328301AC8007BE505 /* BindingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingViewController.swift; sourceTree = "<group>"; };
+		2C4DA6F82836C89A00454941 /* LimitOfTextFieldStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LimitOfTextFieldStoryboard.storyboard; sourceTree = "<group>"; };
+		2C4DA6FA2836C8D500454941 /* LimitOfTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitOfTextFieldViewController.swift; sourceTree = "<group>"; };
 		2C6ECD52282EBDA600AD611A /* study_RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = study_RxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6ECD55282EBDA600AD611A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6ECD57282EBDA600AD611A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 			path = Binding;
 			sourceTree = "<group>";
 		};
+		2C4DA6F72836C85F00454941 /* Max_character_limit_of_UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				2C4DA6F82836C89A00454941 /* LimitOfTextFieldStoryboard.storyboard */,
+				2C4DA6FA2836C8D500454941 /* LimitOfTextFieldViewController.swift */,
+			);
+			path = Max_character_limit_of_UITextField;
+			sourceTree = "<group>";
+		};
 		2C6ECD49282EBDA600AD611A = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +108,7 @@
 				2C6ECD6B282EC15600AD611A /* Alert */,
 				2C312F1028301A87007BE505 /* Binding */,
 				2C9E43B62832975000F34238 /* Driver */,
+				2C4DA6F72836C85F00454941 /* Max_character_limit_of_UITextField */,
 				2C6ECD55282EBDA600AD611A /* AppDelegate.swift */,
 				2C6ECD57282EBDA600AD611A /* SceneDelegate.swift */,
 				2C6ECD59282EBDA600AD611A /* ViewController.swift */,
@@ -198,6 +212,7 @@
 				2C312F1228301AAF007BE505 /* BindingStoryboard.storyboard in Resources */,
 				2C6ECD5F282EBDA800AD611A /* Assets.xcassets in Resources */,
 				2C6ECD5D282EBDA600AD611A /* Main.storyboard in Resources */,
+				2C4DA6F92836C89A00454941 /* LimitOfTextFieldStoryboard.storyboard in Resources */,
 				2C9E43B82832976000F34238 /* DriverStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4DA6FB2836C8D500454941 /* LimitOfTextFieldViewController.swift in Sources */,
 				2C9E43BA2832976C00F34238 /* DriverViewController.swift in Sources */,
 				2C6ECD5A282EBDA600AD611A /* ViewController.swift in Sources */,
 				2C6ECD56282EBDA600AD611A /* AppDelegate.swift in Sources */,
